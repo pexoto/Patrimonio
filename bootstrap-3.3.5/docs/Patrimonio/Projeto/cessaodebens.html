@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>UEMG - PATRIMÔNIO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+    
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Patrimonio UEMG</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Home</a></li> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patrimonio <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="patrimonio.html">Lista de bens</a></li>
+                  <li><a href="#">Manutenção de Bens</a></li>
+                  <li><a href="sessaodebens.html">Sessão de bens</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Área Restrita</li>
+                  <li><a href="cadastrarbens.html">Cadastrar bens</a></li>
+                  <li><a href="localizacao.html">Cadatrar localização</a></li>
+                  <li><a href="sessaodebens.html">Sessão de bens(Pendentes)</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Cadastro</a></li>
+              <li ><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+                <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="control-label col-sm-2">* Identificação:</label>
+          <div class="col-sm-3">          
+            <input type="text" class="form-control" id="pwd" placeholder="Laboratório 3">
+          </div>
+          <label class="control-label col-sm-1">Bloco:</label>
+          <div class="col-sm-3">          
+            <input type="text" class="form-control" id="pwd" placeholder="Bloco A">
+          </div>
+          <label class="control-label col-sm-1">Andar:</label>
+          <div class="col-sm-2">          
+            <input type="number" class="form-control" id="pwd" placeholder="1">
+          </div>
+        </div>
+          
+        <div class="form-group">
+          <label class="control-label col-sm-2">Rua:</label>
+          <div class="col-sm-7">          
+            <input type="text" class="form-control" id="rua" placeholder="Heitor dos Prazeres">
+          </div>
+        <label class="control-label col-sm-1" for="email">Numero:</label>
+          <div class="col-sm-2">
+            <input type="number" class="form-control" id="numero" placeholder="246">
+          </div>          
+        </div>
+
+          
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Bairro:</label>
+          <div class="col-sm-7">          
+            <input type="text" class="form-control" id="bairro" placeholder="Centro">
+          </div>
+          <label class="control-label col-sm-1" for="pwd">CEP:</label>
+            <div class="col-sm-2">          
+              <input type="text" class="form-control" id="pwd" placeholder="38200-000">
+            </div>
+          
+        </div>
+          
+
+          
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox"> Lembrar-me</label>
+            </div>
+          </div>
+        </div>
+          
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-lg btn-primary ">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+        
+      </div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
