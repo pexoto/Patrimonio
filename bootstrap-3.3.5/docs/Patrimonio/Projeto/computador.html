@@ -58,7 +58,7 @@
                   <li class="dropdown-header">Área Restrita</li>
                   <li><a href="cadastrarbens.html">Cadastrar bens</a></li>
                   <li><a href="localizacao.html">Cadatrar localização</a></li>
-                  <li><a href="cessaodebens.html">Cessão de bens(Pendentes)</a></li>
+                  <li><a href="benspendentes.html">Cessão de bens(Pendentes)</a></li>
                 </ul>
               </li>
               <li><a href="#">Contato</a></li>
@@ -74,6 +74,13 @@
       </nav>
 
       <!-- Main component for a primary marketing message or call to action -->
+            <script>
+                function delAlert() {
+                    alert("Tem certeza que deseja deletar este Patrimônio?");
+                }
+            </script>
+      
+      
       <div class="jumbotron">
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
@@ -84,6 +91,7 @@
         <div class="form-group">        
           <div class="col-sm-offset-10 col-sm-10">
             <button type="submit" class="btn btn-lg btn-link ">Editar</button>
+            <button type="submit" class="btn btn-lg btn-link " onclick="delAlert()">Deletar</button>
           </div>
         </div>
           <h3>Computador</h3>

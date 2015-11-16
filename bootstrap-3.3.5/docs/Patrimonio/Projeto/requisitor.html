@@ -18,6 +18,7 @@
     <link href="navbar.css" rel="stylesheet">
     
 
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -75,89 +76,84 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <label class="control-label col-sm-2">No. Patrimonio:</label>
-          <div class="col-sm-4">          
-            <input type="number" class="form-control" id="pwd" placeholder="000123">
-          </div>
-          <label class="control-label col-sm-2">No. Série:</label>
-          <div class="col-sm-4">          
-            <input type="text" class="form-control" id="pwd" placeholder="00011111122">
-          </div>
-        </div>
+            <div class="alert alert-warning" style="display:none">
+            <strong>Aviso!</strong> Tem certeza que deseja deletar esta cessão?
+              <button type="submit" class="btn btn-lg btn-link ">Cancelar</button>
+            <button type="submit" class="btn btn-lg btn-link " >Deletar</button>
+            </div>
           
-        <div class="form-group">
-          <label class="control-label col-sm-2">Localização:</label>
-          <div class="col-sm-6">          
-            <select class="form-control" id="sel1">
-            <option>Laboratório 3, Bloco A</option>
-            <option>Secretaria, Bloco A</option>
-            <option>CPD, Bloco A</option>
-            <option>Sala de Estudos, Bloco B</option>
-            </select>
-          </div>
-        <label class="control-label col-sm-2">Utilização:</label>
-          <div class="col-sm-2">
-            <select class="form-control" id="sel1">
-            <option>Coletivo</option>
-            <option>Individual</option>
-            </select>
-          </div>          
-        </div>
-
-          
-        <div class="form-group">
-            <label class="control-label col-sm-2">Marca:</label>
-                <div class="col-sm-3">          
-                  <input type="text" class="form-control" id="bairro" placeholder="Dell">
-                </div>
-            <label class="control-label col-sm-1">Modelo:</label>
-                <div class="col-sm-3">          
-                  <input type="text" class="form-control" id="pwd" placeholder="Vostro 3550">
-                </div>
-            <label class="control-label col-sm-1">Tipo:</label>
-                <div class="col-sm-2">          
-                  <input type="text" class="form-control" id="pwd" placeholder="Notebook">
-                </div>
-          
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2">Situação:</label>
-                <div class="col-sm-2">          
-                    <select class="form-control" id="sel1">
-                        <option>Regularizado</option>
-                        <option>Emprestado</option>
-                        <option>Disponível</option>
-               
-                    </select>
-                </div>
-            <label class="control-label col-sm-2">Conservação:</label>
-                <div class="col-sm-2">          
-                    <select class="form-control" id="sel1">
-                        <option>A</option>
-                        <option>B</option>
-                        <option>C</option>
-               
-                    </select>
-                </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2">Observações:</label>
-                <div class="col-sm-10">          
-                  <input type="text" class="form-control" id="bairro" placeholder="">
-                </div>
-        </div>
-          
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Cessão de bens (Pendentes)</a></li>
+                <li class="active">Autorização</li>
+            </ol>
         <div class="form-group">        
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-lg btn-primary ">Cadastrar</button>
+          <div class="col-sm-offset-10 col-sm-10">
+            <button type="submit" class="btn btn-lg btn-link ">Autorizar</button>
+            <button type="submit" class="btn btn-lg btn-link " onclick="delAlert()">Deletar</button>
           </div>
         </div>
-      </form>
+          <h3 class="">Requerente: Michel Peixoto Damião</h3>
+          <h4>R.A 10-13634</h4>
+          <h4>michel-peixoto@hotmail.com</h4>
+          <h3>Computador - Notebook</h3>
+        <table class="table table-hover">
+            <tr>
+                <td>No. Patrimonio</td>
+                <td>00123</td> 
+            </tr>
+            <tr>
+                <td>No. Serie</td>
+                <td>00011111122</td> 
+            </tr>
+            <tr>
+                <td>Localização</td>
+                <td>Laboratório 3, Bloco A, Andar 1</td> 
+            </tr>
+            <tr>
+                <td>Utilização</td>
+                <td>Coletivo</td> 
+            </tr>
+            <tr>
+                <td>Marca</td>
+                <td>Dell</td> 
+            </tr>
+            <tr>
+                <td>Modelo</td>
+                <td>Vostro 3550</td> 
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Notebook</td> 
+            </tr>
+            <tr>
+                <td>Situação</td>
+                <td>Regularizado</td> 
+            </tr>            
+            <tr>
+                <td>Conservação</td>
+                <td>A</td> 
+            </tr>    
+            <tr>
+                <td>Observação</td>
+                <td>CPU: Core i5, Ram: 4GB, HD 700gb</td> 
+            </tr>
+                        <tr>
+                <td>Motivo</td>
+                <td>Preciso deste notebook para fazer uma pesquisa de campo com a orientação da professora Dr.ªLeila Maria Franco </td> 
+            </tr>
+        </table>
         
       </div>
 
+      
+      
+      
+      
+      
+      
+      
+      
       
     </div> <!-- /container -->
 
