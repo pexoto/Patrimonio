@@ -9,14 +9,14 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>UEMG - PATRIMONIO</title>
+    <title>UEMG - PATRIMÔNIO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
-    <link href="signin.css" rel="stylesheet">
+    
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -47,25 +47,25 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="patrimonio.html">Patrimonio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li ><a href="index.html">Home</a></li> 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solitação <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Patrimonio <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">X</a></li>
-                  <li><a href="#">Y</a></li>
-                  <li><a href="#">Z</a></li>
+                  <li><a href="patrimonio.html">Lista de bens</a></li>
+                  <li><a href="#">Manutenção de Bens</a></li>
+                  <li><a href="cessaodebens.html">Cessão de bens</a></li>
                   <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li class="dropdown-header">Área Restrita</li>
+                  <li><a href="cadastrarbens.html">Cadastrar bens</a></li>
+                  <li><a href="localizacao.html">Cadatrar localização</a></li>
+                  <li><a href="cessaodebens.html">Cessão de bens(Pendentes)</a></li>
                 </ul>
               </li>
+              <li><a href="#">Contato</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li ><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Cadastro</a></li>
-              <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li ><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               
               
             </ul>
@@ -75,20 +75,25 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <form class="form-signin">
-        <h2 class="form-signin-heading">Entrar</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-        <br>    
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Lembrar-me
-          </label>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="patrimonio.html">Lista de Patrimônios</a></li>
+                <li class="active">Computadores</li>
+            </ol>
+        <div class="form-group">        
+          <div class="col-sm-offset-10 col-sm-10">
+            <button type="submit" class="btn btn-lg btn-link ">Editar</button>
+          </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      </form>
+            <h2>Computadores</h2>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge">Patrimonio</span>N. Patrimonio</li>
+              <li class="list-group-item"><span class="badge">00123</span> <a href="computador.html">0086 - Computador</a></li>  
+              <li class="list-group-item"><span class="badge">09231</span>0086 - Computador</li>
+              <li class="list-group-item"><span class="badge">00168</span>0086 - Computador</li>  
+            </ul>
+
+        
       </div>
 
       
@@ -96,7 +101,7 @@
       
       
       
-      
+             
       
       
       
