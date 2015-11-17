@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
+    
     <title>UEMG - PATRIMÔNIO</title>
 
     <!-- Bootstrap core CSS -->
@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
     
-
+    <script src="scripts.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -76,12 +76,39 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-            <div class="alert alert-warning" style="display:none">
+            <!--<div class="alert alert-warning" data-alert = "alert" style="display:none">
             <strong>Aviso!</strong> Tem certeza que deseja deletar esta cessão?
               <button type="submit" class="btn btn-lg btn-link ">Cancelar</button>
             <button type="submit" class="btn btn-lg btn-link " >Deletar</button>
+            </div>-->
+            
+
+            
+            <div id="alerts"></div>
+            <!-- Modal -->
+            <div class="modal fade" id="modalDel" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Atenção</h4>
+                  </div>
+                  <div class="modal-body">
+                      <h5>Você está prestes a realizar uma ação irreverssível</h5>
+                    <p>Tem certeza que deseja deletar essa cessão?</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Deletar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </div>
+
+              </div>
             </div>
-          
+            <!-- Fim do Modal-->
+                  
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Cessão de bens (Pendentes)</a></li>
@@ -90,7 +117,8 @@
         <div class="form-group">        
           <div class="col-sm-offset-10 col-sm-10">
             <button type="submit" class="btn btn-lg btn-link ">Autorizar</button>
-            <button type="submit" class="btn btn-lg btn-link " onclick="delAlert()">Deletar</button>
+            <button type="submit" class="btn btn-lg btn-link" data-toggle="modal" data-target="#modalDel">Deletar</button>
+            
           </div>
         </div>
           <h3 class="">Requerente: Michel Peixoto Damião</h3>
