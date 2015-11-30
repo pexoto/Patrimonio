@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
+    
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,7 +43,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-              <a class="navbar-brand" href="index.html"><img src="img/logo2.png" width="28"></a>
+            <a class="navbar-brand" href="index.html">Patrimônio UEMG</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -62,7 +63,7 @@
                   <li><a href="benspendentes.html">Cessão de bens(Pendentes)</a></li>
                 </ul>
               </li>
-              <li><a href="Contato.html">Contato</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li ><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Cadastro</a></li>
@@ -76,13 +77,61 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>UEMG - PATRIMÔNIO</h1>
-        <p>Sistema de controle e manutenção de bens da Universidade do Estado de Minas Gerais, Campus Frutal </p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="patrimonio.html" role="button">Lista de patrimônios UEMG </a>
-        </p>
+          <h2>Manutenção de bens</h2>
+          <form class="form-horizontal" role="form">
+         
+        <div class="form-group">
+            <label class="control-label col-sm-2">Assunto:</label>
+            <div class="col-sm-6">          
+              <select class="form-control" id="sel1">
+              <option>...</option>
+              <option>Reclamação</option>
+              <option>Informação</option>
+              <option>Outros</option>
+              </select>
+            </div>
+        
+      
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+          </div>
+        </div>     
+                  
+                  
+        <div class="form-group">
+            <label class = " control-label col-sm-2" for="comment">Mensagem:</label>
+            <div class="col-sm-6">
+                <textarea class="form-control" rows="4" id="comment"></textarea>
+            </div>
+        </div>
+        <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-lg btn-primary ">Enviar</button>
+            <button type="submit" class="btn btn-lg btn-primary ">Limpar</button>
+        </div>
+        </div>
+                
+      </form>
+      
+        </div>
+        
+
+
+        
       </div>
 
+      
+      
+      
+      
+      
+
+      
+      
+      
     </div> <!-- /container -->
 
 

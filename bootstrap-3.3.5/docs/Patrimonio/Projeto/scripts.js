@@ -8,7 +8,7 @@ function addAlert(message) {
 }
 
 function deletarCessao() {
-    addAlert('Tem certeza que deseja deletar esta cess�o?');
+    addAlert('Tem certeza que deseja deletar esta cess�o?');
 }
 
 $('#modal-from-dom').on('show', function() {
@@ -26,3 +26,15 @@ $('.confirm-delete').on('click', function(e) {
     var id = $(this).data('id');
     $('#modal-from-dom').data('id', id).modal('show');
 });
+
+
+
+function validarManutencaoDeBens()
+{
+    var itemComDefeito = document.forms["form1"]["itemDefeito"].value;
+    if (document.getElementsByName('opcoes')[0].value=='blank' )
+       alert('Selecione uma localização');
+    if (itemComDefeito == null || itemComDefeito == "")
+        alert("Preencha os campos corretamente");
+    return false;
+}
