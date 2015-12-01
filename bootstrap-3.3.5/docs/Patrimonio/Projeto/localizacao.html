@@ -82,13 +82,12 @@
       
       <form class="form-horizontal" role="form">
                   <div class="form-group">
-            <label class="control-label col-sm-2">Pré-Preenchimento:</label>
+            <label class="control-label col-sm-2">Localização:</label>
                 <div class="col-sm-3">          
-                    <select class="form-control" id="sel1">
-                        <option>Nenhum</option>
-                        <option>UEMG</option>
-                        <option>Outra Entidade</option>
-                        <option>Mais uma Entidade</option>
+                    <select onchange="desabilitarCampos()" class="form-control" id="sel1" name="opcao" >
+                        <option value="blank">...</option>
+                        <option value="interno">Interno</option>
+                        <option value="externo">Externo</option>
                     </select>
                 </div>
             
@@ -97,15 +96,15 @@
         <div class="form-group">
           <label class="control-label col-sm-2">* Identificação:</label>
           <div class="col-sm-3">          
-            <input type="text" class="form-control" id="pwd" placeholder="Laboratório 3">
+            <input type="text" class="form-control" id="local" placeholder="Laboratório 3">
           </div>
           <label class="control-label col-sm-1">Bloco:</label>
           <div class="col-sm-3">          
-            <input type="text" class="form-control" id="pwd" placeholder="Bloco A">
+            <input type="text" class="form-control" id="bloco" placeholder="Bloco A">
           </div>
           <label class="control-label col-sm-1">Andar:</label>
           <div class="col-sm-2">          
-            <input type="number" class="form-control" id="pwd" placeholder="1">
+            <input type="number" class="form-control" id="andar" placeholder="1">
           </div>
         </div>
           
@@ -128,7 +127,7 @@
           </div>
           <label class="control-label col-sm-1" for="pwd">CEP:</label>
             <div class="col-sm-2">          
-              <input type="text" class="form-control" id="pwd" placeholder="38200-000">
+              <input type="text" class="form-control" id="cep" placeholder="38200-000">
             </div>
           
         </div>

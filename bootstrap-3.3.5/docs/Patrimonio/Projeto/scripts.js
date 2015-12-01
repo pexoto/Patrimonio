@@ -41,3 +41,12 @@ function validarManutencaoDeBens()
 		alert("Adicione uma descrição no campo problema");
     return false;
 }
+
+
+function desabilitarCampos()
+{
+     if (document.getElementsByName('opcao')[1].value=='interno' )
+     {
+     document.getElementById("rua").disabled = true;
+     }  
+}
