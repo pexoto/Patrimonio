@@ -77,13 +77,41 @@
 
       <!-- Main component for a primary marketing message or call to action -->
             <script>
-                function delAlert() {
-                    alert("Tem certeza que deseja deletar este Patrimônio?");
+                function requisitarBem() {
+                    alert("Bem requisitado");
                 }
             </script>
       
       
       <div class="jumbotron">
+          
+                      <!-- Modal -->
+            <div class="modal fade" id="modalRequisicao" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Atenção</h4>
+                  </div>
+                  <div class="modal-body">
+                      <h5>Ao clicar em aceitar você estará aceitando os termos de cessão de bem</h5>
+                    <p>Tem certeza que deseja fazer a requisição deste bem?</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Deletar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- Fim do Modal-->
+          
+          
+          
+          
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cessaodebens.html">Cessão de bens</a></li>
@@ -92,7 +120,7 @@
             </ol>
         <div class="form-group">        
           <div class="col-sm-offset-10 col-sm-10">
-            <button type="submit" class="btn btn-lg btn-link " onclick="delAlert()">Requisitar</button>
+            <button type="submit" class="btn btn-lg btn-link" data-toggle="modal" data-target="#modalRequisicao">Requisitar</button>
           </div>
         </div>
           <h3>Câmera Digital Sony Cyber-Shot 20.1MP</h3>
