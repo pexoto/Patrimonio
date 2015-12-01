@@ -45,8 +45,10 @@ function validarManutencaoDeBens()
 
 function desabilitarCampos()
 {
-     if (document.getElementsByName('opcao')[1].value=='interno' )
-     {
      document.getElementById("rua").disabled = true;
-     }  
+     document.getElementById("bairro").disabled = true;
+     document.getElementById("cep").disabled = true;
+     document.getElementById("numero").disabled = true;
 }
+
+
