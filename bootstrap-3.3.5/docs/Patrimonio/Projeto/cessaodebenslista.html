@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
+    <link href="cessaodebenslista.css" rel="stylesheet">
     
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -79,21 +80,28 @@
       <div class="jumbotron">
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li class="active">Cessão de bens</li>
+                <li><a href="cessaodebens.html">Cessão de bens</a></li>
+                <li class="active">Resultado da pesquisa</li>
             </ol>
                 <h2>Cessão de Bens</h2>
 
                 
                 <label class="control-label col-sm-2" > </label>
-          <div class="col-sm-8">   
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Procurar bem">
-                    <span class="input-group-btn">
-                        
-                        <input class="btn btn-default" type="submit" value="Procurar" onclick="location.href='cessaodebenslista.html'">
-                    </span>
-              </div>
-          </div>
+        <div class="col-sm-8">   
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Procurar bem">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Procurar</button>
+                </span>
+            </div>
+        </div>
+                <br><br>      
+        <ul class="list-group">
+            <li class="list-group-item"><span class="badge badge-inverse">Disponibilidade</span>Nome do bem</li>
+            <li class="list-group-item"><span class="badge badge-success">Disponivel</span>0286 - Câmera Digital Canon PowerShot 16.1MP</li>
+            <li class="list-group-item"><span class="badge badge-danger">Indisponivel</span>0286 - Câmera Digital Nikon Coolpix 16MP</li>  
+            <li class="list-group-item"><span class="badge badge-success">Disponivel</span> <a href="camera.html">0286 - Câmera Digital Sony Cyber-Shot 20.1MP</a></li>  
+        </ul>
 
         
       </div>
