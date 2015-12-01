@@ -31,10 +31,13 @@ $('.confirm-delete').on('click', function(e) {
 
 function validarManutencaoDeBens()
 {
-    var itemComDefeito = document.forms["form1"]["itemDefeito"].value;
+    var itemComDefeito = document.forms["form_manutencao"]["itemDefeito"].value;
+	var problema = document.forms["form_manutencao"]["problema"].value;
     if (document.getElementsByName('opcoes')[0].value=='blank' )
        alert('Selecione uma localização');
     if (itemComDefeito == null || itemComDefeito == "")
         alert("Preencha os campos corretamente");
+	if (problema == null || problema == "")
+		alert("Adicione uma descrição no campo problema");
     return false;
 }
